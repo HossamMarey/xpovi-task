@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Sukar";
+  src: url("../fonts/Sukar-Bold.ttf") format("truetype"),
+       url("../fonts/Sukar-Bold.otf") format("otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Sukar";
+  src: url("../fonts/Sukar-Black.ttf") format("truetype"),
+       url("../fonts/Sukar-Black.otf") format("otf");
+  font-weight: bold;
+}
+
+// overide bootstrap variables 
+@import "abstracts/variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/home";
+ 
