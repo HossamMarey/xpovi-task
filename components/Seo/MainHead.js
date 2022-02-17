@@ -4,7 +4,7 @@ import Head from "next/head";
 const MainHead = ({ title, description, keywords, icon }) => {
   return (
     <Head>
-      <title>{title ? title + " | " : ""} EazyTo</title>
+      <title>{title ? title + " | " : ""} Xpovi</title>
       <meta
         name="description"
         content={description ? description : "default description"}

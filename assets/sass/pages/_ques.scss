@@ -1,0 +1,15 @@
+.ques {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &__que {
+    &:nth-child(n + 2) {
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,5 +1,15 @@
 body {
-  font-family: "Sukar", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
-  line-height: 1.6;
+  color: $color-secondary-light;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-secondary-dark;
 }

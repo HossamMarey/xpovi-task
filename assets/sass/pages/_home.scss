@@ -1,0 +1,21 @@
+.hero {
+  min-height: calc(100vh - 78px);
+  background-image: linear-gradient(to bottom, #ffffff, #cecece);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+  }
+}
