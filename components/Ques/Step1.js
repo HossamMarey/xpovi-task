@@ -1,19 +1,31 @@
 import { QuesContext } from "@/context/quesContext";
 import React, { useContext } from "react";
-import QandA from "./QandA";
+import MCQ from "./MCQ";
 
 const Step1 = () => {
-  const { section1Ques, section1QuesValid } = useContext(QuesContext);
+  const { section1Ques, section1QuesValid, setStep } = useContext(QuesContext);
+
+  const goToStep2 = () => {
+    if (section1QuesValid) {
+      setStep(2);
+    }
+  };
 
   return (
     <div>
       {Object.keys(section1Ques).map((key) => {
-        if (section1Ques[key].type === "q&a" && section1Ques[key].show) {
-          return <QandA que={section1Ques[key]} qname={key} key={key} />;
+        if (section1Ques[key].type === "mcq" && section1Ques[key].show) {
+          return (
+            <MCQ que={section1Ques[key]} qname={key} secNum={1} key={key} />
+          );
         }
       })}
-      <div className="d-flex justify-content-end">
-        <button className="btn btn-dark" disabled={!section1QuesValid}>
+      <div className="d-flex justify-content-end mt-4">
+        <button
+          className="btn btn-secondary"
+          disabled={!section1QuesValid}
+          onClick={goToStep2}
+        >
           Next
         </button>
       </div>

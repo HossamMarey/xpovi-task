@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { QuesContext } from "@/context/quesContext";
 
-const QandA = ({ que, qname }) => {
-  const { updateSection1Ques } = useContext(QuesContext);
+const MCQ = ({ que, qname, secNum }) => {
+  const { updateSectionQues } = useContext(QuesContext);
   const updateQue = (qkey) => {
-    updateSection1Ques(qname, qkey);
+    updateSectionQues(qname, qkey, secNum);
   };
   return (
     <div className="ques__que">
@@ -17,6 +17,7 @@ const QandA = ({ que, qname }) => {
             name={qname}
             id={qname + key}
             onChange={() => updateQue(key)}
+            checked={que.answer && que.answer === key ? true : false}
           />
           <label className="form-check-label" htmlFor={qname + key}>
             {que.answers[key]}
@@ -27,4 +28,4 @@ const QandA = ({ que, qname }) => {
   );
 };
 
-export default QandA;
+export default MCQ;
