@@ -1,4 +1,4 @@
-import { QuesContext } from "@/context/quesContext";
+import { QuesContext } from "@/context/QuesContext";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext } from "react";

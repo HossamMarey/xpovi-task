@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { QuesContext } from "@/context/quesContext";
+import { QuesContext } from "@/context/QuesContext";
 
 const MCQ = ({ que, qname, secNum }) => {
   const { updateSectionQues } = useContext(QuesContext);

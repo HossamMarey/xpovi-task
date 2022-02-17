@@ -1,4 +1,4 @@
-import { QuesContext } from "@/context/quesContext";
+import { QuesContext } from "@/context/QuesContext";
 import axios from "axios";
 import React, { useContext, useState } from "react";
 

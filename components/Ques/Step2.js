@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { QuesContext } from "@/context/quesContext";
+import { QuesContext } from "@/context/QuesContext";
 
 import MCQ from "./MCQ";
 import QNumber from "./QNumber";
